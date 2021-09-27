@@ -87,4 +87,3 @@ client.on('authenticated', (session) => {
     // Save the session object however you prefer.
     // Convert it to json, save it to a file, store it in a database...
 });
-
