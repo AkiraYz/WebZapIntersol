@@ -1,0 +1,22 @@
+<%= form_with(model: celldb) do |form| %>
+  <% if celldb.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(celldb.errors.count, "error") %> prohibited this celldb from being saved:</h2>
+
+      <ul>
+        <% celldb.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cellnumber %>
+    <%= form.text_field :cellnumber %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class Celldb < ApplicationRecord
+end
